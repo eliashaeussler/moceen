@@ -117,7 +117,7 @@ export default {
 
       contentImage.onload = () => {
         const imageRatio = contentImage.naturalWidth / contentImage.naturalHeight;
-        this.imageWidth = contentImage.naturalWidth < 700 ? contentImage.naturalWidth : 700;
+        this.imageWidth = contentImage.naturalWidth < 1000 ? contentImage.naturalWidth : 1000;
         this.imageHeight = this.imageWidth / imageRatio;
       };
     }
@@ -201,7 +201,7 @@ export default {
 
   /* height: 500px; */
   /* max-height: 700px; */
-  max-width: 700px;
+  max-width: 100%;
   padding: 75px;
   display: inline-flex;
 
@@ -214,8 +214,8 @@ export default {
 }
 
 .preview-screen__content__mockup{
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 100%;
+  max-width: 100%;
   z-index: 2;
   position: relative;
 }
